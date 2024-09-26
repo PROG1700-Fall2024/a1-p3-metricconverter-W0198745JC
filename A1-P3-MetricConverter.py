@@ -18,15 +18,22 @@ def main():
 #calculate total ounces
     totalOunces=((35840*tons)+(224*stone)+(16*pounds)+ounces)
 #calculate total kilos
+    totalKilos= totalOunces/35.274
 #calculate metric tons
-#figure out calculation for grams conversion
-#
+    metricTons= int(totalKilos/1000)
+#figure out how to seperate Tons / kilos/ and grams ( AHHHHHHHHH)
+# equation for kilos ( first try praying it works)
+   # kilos=(totalKilos-metricTons)/1000 it Failed :(
+    
+#equation for kilos seperation ATTEMPT 2 SUCCESFUL just need to make it an INT!
+    metricTonsFloat=(totalKilos/1000)
+    kilos=(metricTonsFloat-metricTons)*1000
+#equation for grams seperation
+    grams=(metricTonsFloat-kilos)*1000
 
-
-
-
-
-
+    print(str(metricTonsFloat))
+    print(str(kilos))
+    print(str(grams))
 
     # YOUR CODE ENDS HERE
 
