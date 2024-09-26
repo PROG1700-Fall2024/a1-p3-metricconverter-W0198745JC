@@ -4,7 +4,15 @@
 
 def main():
     # YOUR CODE STARTS HERE, each line must be indented (one tab)
-
+#print Imperial To Metric Conversion
+# tons input 
+#stone input
+#pounds input
+#ounces input
+#calculate total ounces
+#calculate total kilos
+#calculate metric tons
+#figure out calculation for grams conversion
 
 
 
