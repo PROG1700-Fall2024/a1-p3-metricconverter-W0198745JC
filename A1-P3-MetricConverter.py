@@ -33,10 +33,9 @@ def main():
 
     #equation for grams seperation
     #grams=(metricTonsFloat-kilos)*1000 FAILURE 
-    gramsFloat=((kilosFloat-kilos)-kilosFinal)*1000  #YESSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSS it just needed an extra bracket for function order
-    print(str(metricTons))
-    print(str(kilosFinal))
-    print(str(gramsFloat))
+    grams=((kilosFloat-kilos)-kilosFinal)*1000  #YESSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSS it just needed an extra bracket for function order
+
+    print("the Metric weight is {0} Metric Tons, {1} kilos, and {2:.1f} grams.".format(metricTons,kilosFinal,grams))
 
     # YOUR CODE ENDS HERE
 
