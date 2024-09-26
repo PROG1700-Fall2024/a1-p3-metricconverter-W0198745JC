@@ -5,14 +5,22 @@
 def main():
     # YOUR CODE STARTS HERE, each line must be indented (one tab)
 #print Imperial To Metric Conversion
+    print("Imperial To Metric Conversion")
+    print("")
 # tons input 
+    tons= int(input ("Enter the number of tons:"))
 #stone input
+    stone= int(input ("Enter the number of Stone:"))
 #pounds input
+    pounds= int(input ("Enter the number of pounds:"))
 #ounces input
+    ounces= int(input ("Enter the number of ounces:"))
 #calculate total ounces
+    totalOunces=((35840*tons)+(224*stone)+(16*pounds)+ounces)
 #calculate total kilos
 #calculate metric tons
 #figure out calculation for grams conversion
+#
 
 
 
