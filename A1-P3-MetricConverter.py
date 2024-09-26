@@ -25,15 +25,18 @@ def main():
 # equation for kilos ( first try praying it works)
    # kilos=(totalKilos-metricTons)/1000 it Failed :(
     
-#equation for kilos seperation ATTEMPT 2 SUCCESFUL just need to make it an INT!
+#equation for kilos seperation ATTEMPT 3 SUCCESFUL just need to make it an INT!
     metricTonsFloat=(totalKilos/1000)
-    kilos=(metricTonsFloat-metricTons)*1000
-#equation for grams seperation
-    grams=(metricTonsFloat-kilos)*1000
+    kilos=int(metricTonsFloat-metricTons)*1000
+    kilosFloat=(metricTonsFloat-metricTons)*1000
+    kilosFinal=int(kilosFloat-kilos)
 
-    print(str(metricTonsFloat))
-    print(str(kilos))
-    print(str(grams))
+    #equation for grams seperation
+    #grams=(metricTonsFloat-kilos)*1000 FAILURE 
+    gramsFloat=((kilosFloat-kilos)-kilosFinal)*1000  #YESSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSS it just needed an extra bracket for function order
+    print(str(metricTons))
+    print(str(kilosFinal))
+    print(str(gramsFloat))
 
     # YOUR CODE ENDS HERE
 
